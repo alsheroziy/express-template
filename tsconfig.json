@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "esNext",
+		"lib": ["es2017", "esnext.asynciterable"],
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"baseUrl": "src",
+		"typeRoots": ["node_modules/@types"],
+		"moduleResolution": "node",
+		"allowJs": true,
+		"outDir": "dist",
+		"importHelpers": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"strictPropertyInitialization": false,
+		"paths": {
+      "@/*": ["*"],
+			"@/config/*": ["./config/*"],
+			"@/controllers/*": ["./controllers/*"],
+			"@/middlewares/*": ["./middlewares/*"],
+			"@/models/*": ["./models/*"],
+			"@/repositories/*": ["./repositories/*"],
+			"@/routes/*": ["./routes/*"],
+			"@/services/*": ["./services/*"],
+			"@/utils/*": ["./utils/*"],
+      "@/enums/*": ["./enums/*"],
+      "@/errors/*": ["./errors/*"],
+		}
+	},
+	"include": ["src/**/*.ts", ".env"]
+}
