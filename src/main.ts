@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/v1', indexRoute);
+app.use('/api/v1', indexRoute);
 
 const bootstrap = async () => {
   const mongoConnect = new MongoConnect();
